@@ -1,0 +1,62 @@
+{
+  "basicInfo": {
+    "dateOfBirth": "02.06.1990",
+    "city": "Ankara",
+    "education": "Mersin Üniversitesi, 2016",
+    "preferredRole": "Frontend, UI"
+  },
+  "hero": {
+    "img": "../images/profilphoto.jpg"
+  },
+  "aboutMe": "Yazılım geliştirme dünyasına yeni adım atmış bir frontend geliştiricisiyim.Bu alana adım attığım ilk günden itibaren, kullanıcı dostu ve etkili web uygulamaları hedefime sağlam adımlarla ilerliyorum. React, JavaScript, Redux gibi modern teknolojilerle web geliştirmede sağlam bir temel oluşturdum. Her gün yeni şeyler öğrenmeye ve bu alandaki becerilerimi geliştirmeye odaklanıyorum.Hedefim, kullanıcıların ihtiyaçlarını en iyi şekilde karşılayan, erişilebilir ve sürdürülebilir yazılımlar geliştirmek. Kendimi sürekli geliştirmeye ve sektöre katkı sağlamaya kararlıyım.",
+  "skills": [
+    {
+      "name": "JavaScript",
+      "logo": "../images/js.png"
+    },
+    {
+      "name": "Node",
+      "logo": "../images/node.png"
+    },
+    {
+      "name": "React",
+      "logo": "../images/react.png"
+    },
+    {
+      "name": "VS Code",
+      "logo": "../images/vsc.png"
+    },
+    {
+      "name": "Redux",
+      "logo": "../images/redux.png"
+    },
+    {
+      "name": "Figma",
+      "logo": "../images/figma.png"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Workintech",
+      "description": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline.",
+      "technologies": [
+        "React",
+        "Redux",
+        "Vercel"
+      ],
+      "repo": "https://github.com/your-repo/workintech",
+      "liveSite": "https://your-live-site.com"
+    },
+    {
+      "name": "Journey",
+      "description": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline.",
+      "technologies": [
+        "React",
+        "Redux",
+        "Vercel"
+      ],
+      "repo": "https://github.com/your-repo/journey",
+      "liveSite": "https://your-live-site.com"
+    }
+  ]
+}
