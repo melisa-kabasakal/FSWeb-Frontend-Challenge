@@ -7,11 +7,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        customGreen: '#CBF281', 
-        customWhite:'#D9D9D9',
-        customPurple:'#8F88FF',
+        customGreen: '#CBF281',
+        customWhite: '#D9D9D9',
+        customPurple: '#8F88FF',
         customYellow: '#FFE86E',
-        customOrange:'#CA4E18',
+        customOrange: '#CA4E18',
+        customWhite: '#FFFFFF'
 
       },
     },

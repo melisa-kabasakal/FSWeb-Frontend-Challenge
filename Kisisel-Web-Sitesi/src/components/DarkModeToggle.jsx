@@ -19,7 +19,7 @@ const DarkModeToggle = () => {
   }, [darkMode]);
 
   return (
-    <div className="flex justify-center items-center  space-x-2 leading-[72px] ml-3" >
+    <div className="flex justify-center items-center  space-x-2  ml-3" >
       <label className="relative w-[55px] h-[24px] flex items-center justify-center">
         <input
           type="checkbox"

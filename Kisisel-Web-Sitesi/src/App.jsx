@@ -3,14 +3,17 @@
 import { ToastContainer, toast } from 'react-toastify';
 
 import 'react-toastify/dist/ReactToastify.css'
-import Header from './components/Header';
 
-function App(){
+import Hero from './pages/Hero';
+import Skills from './components/Skills';
+
+function App() {
   const notify = () => toast("Wow so easy!");
 
   return (
     <div>
-      <Header/>
+      <Hero />
+      <Skills />
       <button onClick={notify}>Notify!</button>
       <ToastContainer />
     </div>
