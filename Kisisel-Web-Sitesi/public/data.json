@@ -1,16 +1,19 @@
 {
-  "basicInfo": {
-    "dateOfBirth": "02.06.1990",
-    "city": "Ankara",
-    "education": "Mersin Üniversitesi, 2016",
-    "preferredRole": "Frontend, UI"
+  "profile": {
+    "basicInfo": {
+      "dateOfBirth": "02.06.1990",
+      "city": "Ankara",
+      "education": "Mersin Üniversitesi, Makine Mühendisi, 2016",
+      "preferredRole": "Frontend, UI"
+    },
+    "img": "/images/profile.png",
+    "aboutMe": "Yazılım geliştirme dünyasına yeni adım atmış bir frontend geliştiricisiyim.Bu alana adım attığım ilk günden itibaren, kullanıcı dostu ve etkili web uygulamaları hedefime sağlam adımlarla ilerliyorum. React, JavaScript, Redux gibi modern teknolojilerle web geliştirmede sağlam bir temel oluşturdum. Her gün yeni şeyler öğrenmeye ve bu alandaki becerilerimi geliştirmeye odaklanıyorum.Hedefim, kullanıcıların ihtiyaçlarını en iyi şekilde karşılayan, erişilebilir ve sürdürülebilir yazılımlar geliştirmek. Kendimi sürekli geliştirmeye ve sektöre katkı sağlamaya kararlıyım."
   },
   "hero": {
     "img": "/images/profilphoto.png",
     "linkedin": "/images/linkedin.png",
     "github": "/images/github.png"
   },
-  "aboutMe": "Yazılım geliştirme dünyasına yeni adım atmış bir frontend geliştiricisiyim.Bu alana adım attığım ilk günden itibaren, kullanıcı dostu ve etkili web uygulamaları hedefime sağlam adımlarla ilerliyorum. React, JavaScript, Redux gibi modern teknolojilerle web geliştirmede sağlam bir temel oluşturdum. Her gün yeni şeyler öğrenmeye ve bu alandaki becerilerimi geliştirmeye odaklanıyorum.Hedefim, kullanıcıların ihtiyaçlarını en iyi şekilde karşılayan, erişilebilir ve sürdürülebilir yazılımlar geliştirmek. Kendimi sürekli geliştirmeye ve sektöre katkı sağlamaya kararlıyım.",
   "skills": [
     {
       "name": "JAVASCRİPT",

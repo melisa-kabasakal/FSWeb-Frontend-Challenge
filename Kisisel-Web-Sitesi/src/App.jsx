@@ -1,11 +1,10 @@
-
-
 import { ToastContainer, toast } from 'react-toastify';
 
 import 'react-toastify/dist/ReactToastify.css'
 
 import Hero from './pages/Hero';
 import Skills from './components/Skills';
+import Profile from './pages/Profile';
 
 function App() {
   const notify = () => toast("Wow so easy!");
@@ -14,6 +13,7 @@ function App() {
     <div>
       <Hero />
       <Skills />
+      <Profile />
       <button onClick={notify}>Notify!</button>
       <ToastContainer />
     </div>

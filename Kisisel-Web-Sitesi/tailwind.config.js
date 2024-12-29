@@ -12,7 +12,8 @@ export default {
         customPurple: '#8F88FF',
         customYellow: '#FFE86E',
         customOrange: '#CA4E18',
-        customWhite: '#FFFFFF'
+        customWhite: '#FFFFFF',
+        customBlue: "#4731D3"
 
       },
     },
