@@ -42,7 +42,7 @@
   ],
   "projects": [
     {
-      "name": "Workintech",
+      "name": "Pizza Siparişi",
       "description": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline.",
       "technologies": [
         "React",
@@ -50,10 +50,15 @@
         "Vercel"
       ],
       "repo": "https://github.com/your-repo/workintech",
-      "liveSite": "https://your-live-site.com"
+      "liveSite": "https://your-live-site.com",
+      "images": [
+        "/images/project2-1.png",
+        "/images/project2-2.png",
+        "/images/project2-3.png"
+      ]
     },
     {
-      "name": "Journey",
+      "name": "TODO Listesi",
       "description": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline.",
       "technologies": [
         "React",
@@ -61,7 +66,12 @@
         "Vercel"
       ],
       "repo": "https://github.com/your-repo/journey",
-      "liveSite": "https://your-live-site.com"
+      "liveSite": "https://your-live-site.com",
+      "images": [
+        "/images/project2-1.png",
+        "/images/project2-2.png",
+        "/images/project2-3.png"
+      ]
     }
   ]
 }

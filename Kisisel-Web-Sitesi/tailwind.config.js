@@ -13,7 +13,8 @@ export default {
         customYellow: '#FFE86E',
         customOrange: '#CA4E18',
         customWhite: '#FFFFFF',
-        customBlue: "#4731D3"
+        customBlue: "#4731D3",
+        projeTitle: "#4338CA"
 
       },
     },

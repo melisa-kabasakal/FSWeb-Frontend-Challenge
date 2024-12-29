@@ -36,20 +36,20 @@ function HeroContent() {
                     </p>
                     <div className='flex gap-3 mt-4'>
                         <a
-                            className='flex justify-center items-center border-solid border-0 w-24 pl-2 py-0.5 pr-4 gap-2 bg-customWhite rounded-md'
+                            className='flex justify-center items-center border-solid border-0 w-24 h-12 pl-2 py-0.5 pr-3  gap-2 bg-customWhite rounded-md'
                             href={heroData.github}
                             alt='GitHub'
                         >
-                            <FaGithub className='' size={30} />
-                            <p className='text-[#3730A3] text-[13px]'>Github</p>
+                            <FaGithub size={30} />
+                            <p className='text-[#3730A3] text-[15px] pt-2'>Github</p>
                         </a>
                         <a
-                            className='flex justify-center items-center border-solid border-[1px] w-24 pl-2 py-2 pr-4 gap-2 bg-customWhite rounded-md'
+                            className='flex justify-center items-center border-solid border-[1px] w-24 h-12 pl-2 py-2 pr-4 gap-2 bg-customWhite rounded-md'
                             href={heroData.linkedin}
                             alt='Linkedin'
                         >
                             <FontAwesomeIcon icon={faLinkedinIn} />
-                            <p className='text-[#3730A3] text-[13px]'>Linkedin</p>
+                            <p className='text-[#3730A3] text-[15px] pt-2'>Linkedin</p>
                         </a>
                     </div>
                 </div>

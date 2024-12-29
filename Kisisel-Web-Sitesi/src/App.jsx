@@ -5,6 +5,7 @@ import 'react-toastify/dist/ReactToastify.css'
 import Hero from './pages/Hero';
 import Skills from './components/Skills';
 import Profile from './pages/Profile';
+import Projects from './pages/Projects';
 
 function App() {
   const notify = () => toast("Wow so easy!");
@@ -14,6 +15,7 @@ function App() {
       <Hero />
       <Skills />
       <Profile />
+      <Projects />
       <button onClick={notify}>Notify!</button>
       <ToastContainer />
     </div>
