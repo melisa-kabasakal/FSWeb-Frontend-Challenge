@@ -19,17 +19,17 @@ function Profile() {
     }
 
     return (
-        <div className="flex justify-center items-center  bg-customBlue">
-            <div className="w-[960px] p-8 bg-customBlue border-solid border-0">
-                <h2 className="text-customGreen font-inter font-bold text-[30px] text-left mb-6 ml-8">Profile</h2>
-                <div className="flex flex-col md:flex-row justify-start gap-6 items-start">
+        <div className="flex justify-center items-center  bg-customBlue py-8">
+            <div className="w-[960px] p-8 bg-customBlue border-solid border-0 ml-5">
+                <h2 className="text-customGreen font-inter font-bold text-[30px]  mb-6 ">Profile</h2>
+                <div className="flex flex-col md:flex-row  gap-6 ">
                     <div className="max-w-[350px] w-full ">
-                        <h4 className="text-[20px] text-customWhite mb-3 ml-8">Bilgiler</h4>
-                        <ul className="text-customWhite mb-3 text-[14px] leading-6 ">
-                            <li><strong className="text-customGreen mb-2">Doğum Tarihi </strong> {profile.basicInfo.dateOfBirth}</li>
-                            <li><strong className="text-customGreen mb-2">Şehir </strong> {profile.basicInfo.city}</li>
-                            <li><strong className="text-customGreen mb-2">Eğitim </strong> {profile.basicInfo.education}</li>
-                            <li><strong className="text-customGreen mb-2">Tercih Edilen Rol </strong> {profile.basicInfo.preferredRole}</li>
+                        <h4 className="text-[20px] text-customWhite mb-3 ">Bilgiler</h4>
+                        <ul className="text-customWhite  text-[14px] leading-8 -ml-8 ">
+                            <li><strong className="text-customGreen ">Doğum Tarihi </strong> {profile.basicInfo.dateOfBirth}</li>
+                            <li><strong className="text-customGreen ">Şehir </strong> {profile.basicInfo.city}</li>
+                            <li><strong className="text-customGreen ">Eğitim </strong> {profile.basicInfo.education}</li>
+                            <li><strong className="text-customGreen ">Tercih Edilen Rol </strong> {profile.basicInfo.preferredRole}</li>
                         </ul>
                     </div>
                     <img src={profile.img} alt="Profile" className="w-48 h-52 rounded-md mb-4 " />

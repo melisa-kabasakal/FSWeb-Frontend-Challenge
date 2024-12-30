@@ -6,19 +6,21 @@ import Hero from './pages/Hero';
 import Skills from './components/Skills';
 import Profile from './pages/Profile';
 import Projects from './pages/Projects';
-
+import { DarkModeProvider } from './contexts/DarkModeContext';
 function App() {
   const notify = () => toast("Wow so easy!");
 
   return (
-    <div>
-      <Hero />
-      <Skills />
-      <Profile />
-      <Projects />
-      <button onClick={notify}>Notify!</button>
-      <ToastContainer />
-    </div>
+    <DarkModeProvider>
+      <div className="dark:bg-gray-800 dark:text-white">
+        <Hero />
+        <Skills />
+        <Profile />
+        <Projects />
+        <button onClick={notify}>Notify!</button>
+        <ToastContainer />
+      </div>
+    </DarkModeProvider>
   );
 }
 

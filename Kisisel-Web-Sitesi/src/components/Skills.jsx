@@ -15,12 +15,12 @@ function Skills() {
     }, []);
 
     return (
-        <div className="flex justify-center items-center mt-20">
-            <div className="flex flex-row border-solid border-0 w-[960px]  p-8 gap-20">
-                <h2 className="font-inter font-bold text-[#4832D3] text-4xl mb-8 text-left">Skills</h2>
-                <div className="grid grid-cols-2 md:grid-cols-2  gap-8 font-inter text-[20px] text-[#777777]">
+        <div className="flex justify-center items-center my-12">
+            <div className="flex flex-row border-solid border-0 w-[960px] p-12">
+                <h2 className="font-inter font-bold text-[#4832D3] text-[32px] mb-8 mr-32 text-left">Skills</h2>
+                <div className="grid grid-cols-2 md:grid-cols-2  gap-8 font-inter text-[20px] text-[#777777] max-sm:gap-6 max-sm:-ml-16 max-sm:flex-col ">
                     {skills.map((skill, index) => (
-                        <div key={index} className="flex flex-row items-center gap-3 mr-28">
+                        <div key={index} className="flex flex-row items-center gap-3 mr-28 max-sm:flex max-sm:justify-around">
                             <img src={skill.logo} alt={skill.name} className="w-16 h-16 " />
                             <p className="font-inter text-center ">{skill.name}</p>
                         </div>

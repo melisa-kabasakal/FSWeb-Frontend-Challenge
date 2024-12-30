@@ -25,7 +25,7 @@ function ProjectCard({ project }) {
     };
 
     return (
-        <Card style={{ maxWidth: '900px', margin: 'auto', border: '1px solid #ddd', marginBottom: '30px' }}>
+        <Card style={{ maxWidth: '960px', margin: 'auto', border: '1px solid #ddd', marginBottom: '30px' }}>
             <CardBody className="d-flex flex-row">
 
                 <div style={{ width: '50%', marginRight: '20px' }}>
