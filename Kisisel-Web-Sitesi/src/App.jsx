@@ -2,14 +2,15 @@ import { ToastContainer, toast } from 'react-toastify';
 
 import 'react-toastify/dist/ReactToastify.css'
 
-import Hero from './pages/Hero';
-import Skills from './components/Skills';
-import Profile from './pages/Profile';
-import Projects from './pages/Projects';
-import { DarkModeProvider } from './contexts/DarkModeContext';
-import Footer from './pages/footer';
+import Hero from './pages/Hero'
+import Skills from './components/Skills'
+import Profile from './pages/Profile'
+import Projects from './pages/Projects'
+import { DarkModeProvider } from './contexts/DarkModeContext'
+import Footer from './pages/Footer.jsx'
 function App() {
-  const notify = () => toast("Wow so easy!");
+  const notify = () => toast("Wow so easy!")
+
 
   return (
     <DarkModeProvider>
@@ -23,7 +24,7 @@ function App() {
         <ToastContainer />
       </div>
     </DarkModeProvider>
-  );
+  )
 }
 
 export default App

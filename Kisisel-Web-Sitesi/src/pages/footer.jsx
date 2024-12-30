@@ -4,8 +4,6 @@ import { getFooter } from "../store/footerActions"
 
 const Footer = () => {
     const dispatch = useDispatch()
-
-    // Redux store'undan verileri alıyoruz
     const footerData = useSelector((store) => store.footer.footer)
     const loading = useSelector((store) => store.footer.loading)
     const error = useSelector((store) => store.footer.error)
@@ -14,10 +12,14 @@ const Footer = () => {
         dispatch(getFooter());
     }, [dispatch])
 
-    if (loading) return <p>Loading...</p>;
-    if (error) return <p>Error: {error}</p>;
+    if (loading) return <p>Loading...</p>
+    if (error) return <p>Error: {error}</p>
 
-    const { title, msg, email, images } = footerData[0];
+    if (!footerData || footerData.length === 0) {
+        return <p>Boş veri</p>
+    }
+
+    const { title, msg, email, images } = footerData[0]
 
     return (
         <footer className="flex flex-col justify-center items-center mt-5">
