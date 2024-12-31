@@ -21,9 +21,9 @@ function Profile() {
     return (
         <div className="flex justify-center items-center  bg-customBlue py-8">
             <div className="w-[960px] p-8 bg-customBlue border-solid border-0 ml-5">
-                <h2 className="text-customGreen font-inter font-bold text-[30px]  mb-6 ">Profile</h2>
+                <h2 className="text-customGreen font-inter font-bold text-[30px]  mb-10 ">Profile</h2>
                 <div className="flex flex-col md:flex-row  gap-6 ">
-                    <div className="max-w-[350px] w-full ">
+                    <div className="w-[350px]  ">
                         <h4 className="text-[20px] text-customWhite mb-3 ">Bilgiler</h4>
                         <ul className="text-customWhite  text-[14px] leading-8 -ml-8 ">
                             <li><strong className="text-customGreen ">Doğum Tarihi </strong> {profile.basicInfo.dateOfBirth}</li>

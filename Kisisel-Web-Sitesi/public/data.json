@@ -45,25 +45,25 @@
       "name": "Pizza Siparişi",
       "description": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline.",
       "technologies": [
-        "React",
-        "Redux",
-        "Vercel"
+        "react",
+        "redux",
+        "vercel"
       ],
       "repo": "https://github.com/your-repo/workintech",
       "liveSite": "https://your-live-site.com",
       "images": [
-        "/images/project2-1.png",
-        "/images/project2-2.png",
-        "/images/project2-3.png"
+        "/images/project1-1.png",
+        "/images/project1-2.png",
+        "/images/project1-3.png"
       ]
     },
     {
       "name": "TODO Listesi",
       "description": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline.",
       "technologies": [
-        "React",
-        "Redux",
-        "Vercel"
+        "react",
+        "redux",
+        "vercel"
       ],
       "repo": "https://github.com/your-repo/journey",
       "liveSite": "https://your-live-site.com",
@@ -82,7 +82,7 @@
       "images": [
         "/images/twitter.png",
         "/images/vector.png",
-        "/images/codelogo.png",
+        "/images/codepen.png",
         "/images/instlogo.png"
       ]
     }

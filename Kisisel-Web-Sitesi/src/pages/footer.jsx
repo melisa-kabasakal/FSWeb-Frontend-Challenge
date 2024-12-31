@@ -1,6 +1,8 @@
 import React, { useEffect } from "react"
 import { useSelector, useDispatch } from "react-redux"
 import { getFooter } from "../store/footerActions"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSquareTwitter } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
     const dispatch = useDispatch()
@@ -28,11 +30,15 @@ const Footer = () => {
                 <p className="font-inter text-center text-[#120B39] text-[16px]">{msg}</p>
                 <a href="" className="text-customBlue">
                     {email}
+
                 </a>
-                <div className="w-auto flex justify-center items-center gap-4">
+
+
+                <div className="w-auto flex justify-center items-center gap-4 decoration-sky-600">
                     {images.map((src, index) => (
                         <img key={index} src={src} className="w-8 h-8" />
                     ))}
+
                 </div>
             </div>
         </footer>

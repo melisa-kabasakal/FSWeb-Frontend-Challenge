@@ -37,7 +37,7 @@ function ProjectCard({ project }) {
                         />
                         {project.images.map((image, index) => (
                             <CarouselItem key={index}>
-                                <img src={image} alt={`Project image ${index + 1}`} className="d-block w-100 rounded w-[300px] h-[300px]" />
+                                <img src={image} className="d-block w-100 rounded w-[300px] h-[300px]" />
                             </CarouselItem>
                         ))}
                     </Carousel>
@@ -48,10 +48,16 @@ function ProjectCard({ project }) {
                         color: '#4338CA', fontFamily: 'Inter', fontSize: '23px', fontWeight: '700',
                         lineHeight: '32px'
                     }} tag="h5">{project.name}</CardTitle>
-                    <CardSubtitle className="mb-2 mt-4 font-inter text-[#383838]" tag="h6">{project.description}</CardSubtitle>
-                    <CardText>
-                        {project.technologies}
-                    </CardText>
+                    <CardSubtitle className="mb-2 mt-4 font-inter  text-[#383838]" tag="h6">{project.description}</CardSubtitle>
+                    <div className="flex gap-2">
+                        {project.technologies.map((tech) => (
+                            <CardText
+                                className="border-solid border-[1px] bg-customBlue text-customWhite font-inter text-[14px] rounded-3xl w-[70px] h-[32px] text-center mt-4 p-1"
+                            >
+                                {tech}
+                            </CardText>
+                        ))}
+                    </div>
                     <div className="mt-3">
                         <CardLink href={project.liveSite} style={{ color: 'black' }} >View Site</CardLink>
                         <CardLink href={project.repo} style={{ color: 'black' }} >GitHub</CardLink>
