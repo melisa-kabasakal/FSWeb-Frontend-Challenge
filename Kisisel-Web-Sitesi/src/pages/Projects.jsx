@@ -19,6 +19,7 @@ function Projects() {
     }, []);
 
 
+
     return (
         <div className="bg-customGreen flex justify-center rounded-xl">
             <div className='w-[960px] p-8 border-solid border-0 rounded-xl'>

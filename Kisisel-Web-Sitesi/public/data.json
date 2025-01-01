@@ -92,8 +92,8 @@
         "redux",
         "vercel"
       ],
-      "repo": "https://github.com/your-repo/workintech",
-      "liveSite": "https://your-live-site.com",
+      "repo": "https://github.com/melisa-kabasakal/fsweb-s8-challenge-pizza.git",
+      "liveSite": "https://fsweb-s8-challenge-pizza-jgyo.vercel.app/orderpizza",
       "images": [
         "/images/project1-1.png",
         "/images/project1-2.png",
@@ -114,7 +114,7 @@
         "redux",
         "vercel"
       ],
-      "repo": "https://github.com/your-repo/journey",
+      "repo": "https://github.com/melisa-kabasakal/To-Do-Project-Cypress-Test.git",
       "liveSite": "https://your-live-site.com",
       "images": [
         "/images/project2-1.png",

@@ -14,6 +14,7 @@ const Footer = () => {
     const dispatch = useDispatch()
 
 
+
     useEffect(() => {
         dispatch(getFooter());
     }, [dispatch])
