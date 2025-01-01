@@ -11,7 +11,7 @@ import {
     CarouselIndicators
 } from 'reactstrap';
 
-function ProjectCard({ project }) {
+function ProjectCard({ project, language }) {
     const [activeIndex, setActiveIndex] = useState(0);
 
     const next = () => {
@@ -24,41 +24,45 @@ function ProjectCard({ project }) {
         setActiveIndex(prevIndex);
     };
 
-    return (
-        <Card style={{ maxWidth: '960px', margin: 'auto', border: '1px solid #ddd', marginBottom: '30px' }}>
-            <CardBody className="d-flex flex-row">
+    const getText = (lang) => (lang ? (language === 'en' ? lang.en : lang.tr) : '')
 
-                <div style={{ width: '50%', marginRight: '20px' }}>
+    return (
+        <Card style={{ width: '960px', margin: 'auto', marginBottom: '30px' }}>
+            <CardBody className="flex flex-row">
+
+                <div style={{ width: '40%', marginLeft: '-16px', marginTop: '-16px', marginBottom: '-16px' }}>
                     <Carousel activeIndex={activeIndex} next={next} previous={previous}>
                         <CarouselIndicators
                             items={project.images.map((image, index) => ({ src: image, id: index }))}
                             activeIndex={activeIndex}
-                            onClickHandler={setActiveIndex}
+                            onClickHandler={(index) => setActiveIndex(index)}
                         />
                         {project.images.map((image, index) => (
                             <CarouselItem key={index}>
-                                <img src={image} className="d-block w-100 rounded w-[300px] h-[300px]" />
+                                <img src={image} className="d-block w-[350px] h-[350px] rounded-tl-[6px] rounded-bl-[6px]" />
                             </CarouselItem>
                         ))}
                     </Carousel>
                 </div>
 
-                <div style={{ width: '50%' }}>
+                <div style={{ width: '60%', marginTop: '30px', }}>
                     <CardTitle style={{
                         color: '#4338CA', fontFamily: 'Inter', fontSize: '23px', fontWeight: '700',
                         lineHeight: '32px'
-                    }} tag="h5">{project.name}</CardTitle>
-                    <CardSubtitle className="mb-2 mt-4 font-inter  text-[#383838]" tag="h6">{project.description}</CardSubtitle>
+                    }} tag="h5">{getText(project.name)}</CardTitle>
+                    <CardSubtitle className="mb-2  font-inter  text-[#383838]">{getText(project.description)}</CardSubtitle>
                     <div className="flex gap-2">
-                        {project.technologies.map((tech) => (
+                        {project.technologies.map((tech, index) => (
                             <CardText
-                                className="border-solid border-[1px] bg-customBlue text-customWhite font-inter text-[14px] rounded-3xl w-[70px] h-[32px] text-center mt-4 p-1"
+                                key={index}
+                                className="border-solid border-[1px] bg-customBlue text-customWhite font-inter text-[14px] rounded-3xl w-[70px] h-[32px] text-center mt-2 p-1"
                             >
                                 {tech}
                             </CardText>
+
                         ))}
                     </div>
-                    <div className="mt-3">
+                    <div className="mt-2">
                         <CardLink href={project.liveSite} style={{ color: 'black' }} >View Site</CardLink>
                         <CardLink href={project.repo} style={{ color: 'black' }} >GitHub</CardLink>
                     </div>

@@ -5,14 +5,14 @@ const DarkModeToggle = () => {
   const { darkMode, toggleDarkMode } = useContext(DarkModeContext);
 
   return (
-    <div className="flex justify-center items-center space-x-2 ml-3">
-      <label className="relative w-[55px] h-[24px] flex items-center justify-center">
+    <div className="flex justify-center items-center space-x-2 ml-3 ">
+      <label className="relative w-[55px] h-[24px] flex items-center justify-center cursor-pointer text-customWhite">
         <input
           type="checkbox"
           value=""
           checked={darkMode}
           onChange={toggleDarkMode}
-          className="hidden peer"
+          className="hidden peer cursor-pointer text-customWhite"
         />
         <span className="absolute w-full h-full rounded-full bg-customOrange transition-all duration-300 peer-checked:bg-customPurple"></span>
         <span

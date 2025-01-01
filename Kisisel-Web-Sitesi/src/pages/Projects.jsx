@@ -2,9 +2,11 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import ProjectCard from '../components/ProjectCard';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { useLanguage } from '../contexts/LanguageContext';
 
 function Projects() {
-    const [projects, setProjects] = useState([]);
+    const [projects, setProjects] = useState([])
+    const { language } = useLanguage()
 
     useEffect(() => {
         axios.get('/data.json')
@@ -16,12 +18,13 @@ function Projects() {
             });
     }, []);
 
+
     return (
         <div className="bg-customGreen flex justify-center rounded-xl">
             <div className='w-[960px] p-8 border-solid border-0 rounded-xl'>
-                <h2 className="font-inter text-[30px]  text-customBlue font-bold">Projects</h2>
+                <h2 className="font-inter text-[30px]  text-customBlue font-bold">{language === 'en' ? "Projects" : "Projeler"}</h2>
                 {projects.map((project, index) => (
-                    <ProjectCard key={index} project={project} />
+                    <ProjectCard key={index} project={project} language={language} />
                 ))}
             </div>
         </div>

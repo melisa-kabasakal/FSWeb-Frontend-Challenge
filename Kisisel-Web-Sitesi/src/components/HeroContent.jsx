@@ -3,9 +3,11 @@ import axios from 'axios';
 import { FaGithub } from 'react-icons/fa';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import { useLanguage } from '../contexts/LanguageContext';
 
 function HeroContent() {
-    const [heroData, setHeroData] = useState(null);
+    const [heroData, setHeroData] = useState(null)
+    const { language } = useLanguage()
 
     useEffect(() => {
         axios.get('/data.json')
@@ -26,10 +28,10 @@ function HeroContent() {
             <div className="flex flex-col md:flex-row items-center justify-between w-full md:w-[960px] sm:flex sm:flex-row ">
                 <div className="flex flex-col items-start md:max-w-[60%] sm:max-w-[60%] ">
                     <h4 className="text-[40px] font-inter text-customGreen font-bold mt-4 md:mt-14">
-                        Ben bir Frontend Developer'ım...
+                        {language === 'en' ? heroData.title.en : heroData.title.tr}
                     </h4>
                     <p className="text-[15px] font-inter text-customWhite mt-4">
-                        Harika bir kullanıcı deneyimiyle sağlam ve ölçeklenebilir frontend ürünleri oluşturmayı seven biriyim.
+                        {language === 'en' ? heroData.about.en : heroData.about.tr}
                     </p>
                     <div className="flex gap-4 mt-6">
                         <a

@@ -1,15 +1,52 @@
 {
   "profile": {
     "basicInfo": {
-      "dateOfBirth": "02.06.1990",
+      "title": {
+        "tr": "Bilgiler",
+        "en": "Basic Information"
+      },
+      "dateName": {
+        "tr": "Doğum Tarihi",
+        "en": "Date of Birth"
+      },
+      "dateOfBirth": {
+        "tr": "02.06.1990",
+        "en": "02.06.1990"
+      },
+      "residense": {
+        "tr": "İkamet Şehri",
+        "en": "City"
+      },
       "city": "Ankara",
-      "education": "Mersin Üniversitesi, Makine Mühendisi, 2016",
+      "educationName": {
+        "tr": "Eğitim Durumu",
+        "en": "Education Status"
+      },
+      "education": {
+        "tr": "Mersin Üniversitesi, Makine Mühendisi, 2016",
+        "en": "Mersin University, Mechanical Engineering, 2016"
+      },
+      "roleName": {
+        "tr": "Tercih Ettiği Rol",
+        "en": "Preferred Role"
+      },
       "preferredRole": "Frontend, UI"
     },
     "img": "/images/profile.png",
-    "aboutMe": "Yazılım geliştirme dünyasına yeni adım atmış bir frontend geliştiricisiyim.Bu alana adım attığım ilk günden itibaren, kullanıcı dostu ve etkili web uygulamaları hedefime sağlam adımlarla ilerliyorum. React, JavaScript, Redux gibi modern teknolojilerle web geliştirmede sağlam bir temel oluşturdum. Her gün yeni şeyler öğrenmeye ve bu alandaki becerilerimi geliştirmeye odaklanıyorum.Hedefim, kullanıcıların ihtiyaçlarını en iyi şekilde karşılayan, erişilebilir ve sürdürülebilir yazılımlar geliştirmek. Kendimi sürekli geliştirmeye ve sektöre katkı sağlamaya kararlıyım."
+    "aboutMe": {
+      "tr": "Yazılım geliştirme dünyasına yeni adım atmış bir frontend geliştiricisiyim.Bu alana adım attığım ilk günden itibaren, kullanıcı dostu ve etkili web uygulamaları hedefime sağlam adımlarla ilerliyorum. React, JavaScript, Redux gibi modern teknolojilerle web geliştirmede sağlam bir temel oluşturdum. Her gün yeni şeyler öğrenmeye ve bu alandaki becerilerimi geliştirmeye odaklanıyorum.Hedefim, kullanıcıların ihtiyaçlarını en iyi şekilde karşılayan, erişilebilir ve sürdürülebilir yazılımlar geliştirmek.",
+      "en": "I am a frontend developer who has just stepped into the world of software development. From the first day I stepped into this field, I have been taking firm steps towards my goal of user-friendly and effective web applications. I have built a solid foundation in web development with modern technologies such as React, JavaScript, Redux. I focus on learning new things every day and improving my skills in this field. My goal is to develop accessible and sustainable software that best meets the needs of users."
+    }
   },
   "hero": {
+    "title": {
+      "tr": "Ben bir Frontend Developer'ım...",
+      "en": "I am a Frontend Developer..."
+    },
+    "about": {
+      "tr": "Harika bir kullanıcı deneyimiyle sağlam ve ölçeklenebilir frontend ürünleri oluşturmayı seven biriyim.",
+      "en": "...who likes to craft solid and scalable frontend products with great user experiences."
+    },
     "img": "/images/profilphoto.png",
     "linkedin": "/images/linkedin.png",
     "github": "/images/github.png"
@@ -42,8 +79,14 @@
   ],
   "projects": [
     {
-      "name": "Pizza Siparişi",
-      "description": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline.",
+      "name": {
+        "tr": "Pizza Siparişi",
+        "en": "Pizza Order"
+      },
+      "description": {
+        "tr": "Frontend eğitimimim ikinci ayında kullanıcıların içerik seçip sipariş verebileceği pizza siparişi web uygulaması geliştirdim.Bu projeyi React Router ile geliştirip componentlerden oluşan bir yapı oluşturdum.Cypress kullanarak kullanıcı akışını test edip, tespit edilen hataları iyileştirerek kullanıcıya daha iyi bir uygulama sunmaya çalıştım.",
+        "en": "In the second month of my Frontend training, I developed a pizza ordering web application where users can select content and order. I developed this project with React Router and created a structure consisting of components. I tested the user flow using Cypress and tried to offer a better application to the user by improving the detected errors."
+      },
       "technologies": [
         "react",
         "redux",
@@ -58,8 +101,14 @@
       ]
     },
     {
-      "name": "TODO Listesi",
-      "description": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline.",
+      "name": {
+        "tr": "To-Do Listesi",
+        "en": "To-Do List"
+      },
+      "description": {
+        "tr": "React eğitiminin ilk haftasında, görev ekleme, silme ve tamamlanma durumlarını yönetebilen bir to-do listesi uygulaması geliştirdim. React bileşen yapısı ve temel state yönetimi ile geliştirdiğim bu projeyi, kullanıcı deneyimini iyileştirmek amacıyla yaptığım cypress test aşamasıyla tamamladım.",
+        "en": "In the first week of React training, I developed a to-do list application that can manage task addition, deletion and completion status. I completed this project, which I developed with the React component structure and basic state management, with the Cypress testing phase to improve the user experience."
+      },
       "technologies": [
         "react",
         "redux",
@@ -76,8 +125,14 @@
   ],
   "footer": [
     {
-      "title": "Bana bir mesaj gönder!",
-      "msg": "Bir sorunuz veya öneriniz mi var, ya da sadece merhaba demek mi istiyorsunuz? Hadi gelin.",
+      "title": {
+        "tr": "Bana bir mesaj gönder!",
+        "en": "Send me a message!"
+      },
+      "msg": {
+        "tr": "Bir sorunuz veya öneriniz mi var, ya da sadece merhaba demek mi istiyorsunuz? Hadi gelin.",
+        "en": "Got a question or proposal,or just want to say hello? Go ahead."
+      },
       "email": "meliskabasakal33@gmail.com",
       "images": [
         "/images/twitter.png",
