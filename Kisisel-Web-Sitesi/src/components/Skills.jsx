@@ -17,10 +17,10 @@ function Skills() {
     }, []);
 
     return (
-        <div className="flex justify-center items-center my-12">
-            <div className="flex flex-row border-solid border-0 w-[960px] p-12">
-                <h2 className="font-inter font-bold text-[#4832D3] text-[32px] mb-8 mr-32 text-left">{language === 'en' ? 'Skills' : 'Beceriler'}</h2>
-                <div className="grid grid-cols-2 md:grid-cols-2  gap-8 font-inter text-[20px] text-[#777777] max-sm:gap-6 max-sm:-ml-16 max-sm:flex-col ">
+        <div className="flex justify-center items-center my-12 ">
+            <div className="flex flex-row border-solid border-0 w-[960px] p-12 md:flex-nowrap md:items-start  sm:flex sm:flex-wrap sm:gap-8 sm:items-center sm:justify-center sm:ml-10  md:gap-0 ">
+                <h2 className="font-inter font-bold mr-32 text-[#4832D3] text-[32px] text-left  md:-ml-8  sm:ml-12">{language === 'en' ? 'Skills' : 'Beceriler'}</h2>
+                <div className="grid grid-cols-2 md:grid-cols-2  gap-8 font-inter text-[20px] text-[#777777] max-sm:gap-6 max-sm:-ml-16 max-sm:flex-col md:-mr-5">
                     {skills.map((skill, index) => (
                         <div key={index} className="flex flex-row items-center gap-3 mr-28 max-sm:flex max-sm:justify-around">
                             <img src={skill.logo} alt={skill.name} className="w-16 h-16 " />

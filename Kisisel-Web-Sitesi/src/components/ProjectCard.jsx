@@ -27,10 +27,10 @@ function ProjectCard({ project, language }) {
     const getText = (lang) => (lang ? (language === 'en' ? lang.en : lang.tr) : '')
 
     return (
-        <Card style={{ width: '960px', margin: 'auto', marginBottom: '30px' }}>
-            <CardBody className="flex flex-row">
+        <Card className='mb-8 '>
+            <CardBody className="flex flex-row sm:w-[640px] sm:max-h-[350px] ">
 
-                <div style={{ width: '40%', marginLeft: '-16px', marginTop: '-16px', marginBottom: '-16px' }}>
+                <div className='w-[40%] flex justify-start items-start  -ml-4 -mt-4  sm:w-[250px] '>
                     <Carousel activeIndex={activeIndex} next={next} previous={previous}>
                         <CarouselIndicators
                             items={project.images.map((image, index) => ({ src: image, id: index }))}
@@ -45,12 +45,12 @@ function ProjectCard({ project, language }) {
                     </Carousel>
                 </div>
 
-                <div style={{ width: '60%', marginTop: '30px', }}>
+                <div className='w-[60%] m-4'>
                     <CardTitle style={{
                         color: '#4338CA', fontFamily: 'Inter', fontSize: '23px', fontWeight: '700',
                         lineHeight: '32px'
                     }} tag="h5">{getText(project.name)}</CardTitle>
-                    <CardSubtitle className="mb-2  font-inter  text-[#383838]">{getText(project.description)}</CardSubtitle>
+                    <CardSubtitle className=" font-inter  text-[#383838]">{getText(project.description)}</CardSubtitle>
                     <div className="flex gap-2">
                         {project.technologies.map((tech, index) => (
                             <CardText
@@ -62,7 +62,7 @@ function ProjectCard({ project, language }) {
 
                         ))}
                     </div>
-                    <div className="mt-2">
+                    <div className="mb-4">
                         <CardLink href={project.liveSite} style={{ color: 'black' }} >View Site</CardLink>
                         <CardLink href={project.repo} style={{ color: 'black' }} >GitHub</CardLink>
                     </div>

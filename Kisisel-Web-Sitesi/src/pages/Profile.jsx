@@ -21,11 +21,11 @@ function Profile() {
     }
 
     return (
-        <div className="flex justify-center items-center  bg-customBlue py-8">
-            <div className="w-[960px] p-8 bg-customBlue border-solid border-0 ml-5">
+        <div className="flex justify-center items-center  bg-customBlue py-8 md:flex md:order-2">
+            <div className="w-[960px] sm:p-8 bg-customBlue border-solid border-0 sm:ml-0 sm:flex sm:flex-col sm:justify-center sm:items-center ">
                 <h2 className="text-customGreen font-inter font-bold text-[30px]  mb-10 ">{language === 'en' ? "Profile" : "Profil"}</h2>
-                <div className="flex flex-col md:flex-row  gap-6 ">
-                    <div className="w-[350px]  ">
+                <div className="flex flex-col gap-6 ">
+                    <div className="w-[350px] ">
                         <h4 className="text-[20px] text-customWhite mb-3 ">{language === 'en' ? profile.basicInfo.title.en : profile.basicInfo.title.tr}</h4>
                         <ul className="text-customWhite  text-[14px] leading-8 -ml-8 ">
                             <li><strong className="text-customGreen ">{language === 'en' ? profile.basicInfo.dateName.en : profile.basicInfo.dateName.tr} </strong> {profile.basicInfo.dateOfBirth.tr}</li>
