@@ -1,8 +1,8 @@
-import { useContext } from "react";
-import { DarkModeContext } from "../contexts/DarkModeContext";
+import { useContext } from "react"
+import { DarkModeContext } from "../contexts/DarkModeContext"
 
 const DarkModeToggle = () => {
-  const { darkMode, toggleDarkMode } = useContext(DarkModeContext);
+  const { darkMode, toggleDarkMode } = useContext(DarkModeContext)
 
   return (
     <div className="flex justify-center items-center space-x-2 ">
@@ -20,10 +20,10 @@ const DarkModeToggle = () => {
         ></span>
       </label>
       <h4 className={`font-inter text-[15px] mt-2 font-bold ${darkMode ? "text-indigo-500" : "text-customOrange"}`}>
-        {darkMode ? "DARK MODE" : "NIGHT MODE"}
+        {darkMode ? "DARK MODE" : "LIGHT MODE"}
       </h4>
     </div>
-  );
-};
+  )
+}
 
-export default DarkModeToggle;
+export default DarkModeToggle

@@ -4,7 +4,7 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
-  darkMode: 'class',
+  darkMode: 'media',
   theme: {
     extend: {
       colors: {
@@ -15,8 +15,8 @@ export default {
         customOrange: '#CA4E18',
         customWhite: '#FFFFFF',
         customBlue: "#4731D3",
-        projeTitle: "#4338CA"
-
+        projeTitle: "#4338CA",
+        customBlack: "#1E1E1E"
       },
     },
   },

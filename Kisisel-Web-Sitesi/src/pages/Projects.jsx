@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
-import ProjectCard from '../components/ProjectCard';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { useLanguage } from '../contexts/LanguageContext';
+import React, { useState, useEffect } from 'react'
+import axios from 'axios'
+import ProjectCard from '../components/ProjectCard'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import { useLanguage } from '../contexts/LanguageContext'
+
 
 function Projects() {
     const [projects, setProjects] = useState([])
@@ -16,7 +17,9 @@ function Projects() {
             .catch((error) => {
                 console.error('Proje verileri alınamadı:', error);
             });
-    }, []);
+    }, [])
+
+
 
 
 
@@ -29,7 +32,7 @@ function Projects() {
                 ))}
             </div>
         </div>
-    );
+    )
 }
 
-export default Projects;
+export default Projects
