@@ -27,10 +27,10 @@ function ProjectCard({ project, language }) {
     const getText = (lang) => (lang ? (language === 'en' ? lang.en : lang.tr) : '')
 
     return (
-        <Card className='mb-8 '>
+        <Card className='mb-8 sm:text-[12px] md:text-[14px]'>
             <CardBody className="flex flex-row sm:w-[640px] sm:max-h-[350px] ">
 
-                <div className='w-[40%] flex justify-start items-start  -ml-4 -mt-4  sm:w-[250px] '>
+                <div className='w-[40%] flex justify-start items-start  -ml-4 -mt-4  sm:w-[250px] md:w-80 '>
                     <Carousel activeIndex={activeIndex} next={next} previous={previous}>
                         <CarouselIndicators
                             items={project.images.map((image, index) => ({ src: image, id: index }))}
