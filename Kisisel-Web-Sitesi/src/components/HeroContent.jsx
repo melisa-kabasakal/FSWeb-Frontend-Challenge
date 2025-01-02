@@ -25,7 +25,7 @@ function HeroContent() {
 
     return (
         <div className="flex justify-center items-center w-full px-4 sm:ml-10 sm:flex-1 sm:-mt-10 md:flex-row md:justify-between md:items-center md:-mt-20 lg:w-[960px] xl:w-[70rem] xl:justify-center 2xl:w-[80rem] 2xl:ml-[90px] ">
-            <div className="flex flex-col sm:flex-col md:flex-row md:gap-4 items-center justify-between w-full md:max-w-[85%] xl:items-start 2xl:w-[960px]">
+            <div className="flex flex-col sm:flex-col md:flex-row md:gap-4 items-center justify-between w-full md:max-w-[85%] xl:items-start 2xl:w-[960px] md:ml-4">
                 <div className="flex flex-col items-start md:max-w-[70%] md:flex- sm:max-w-[56%] sm:order-1 lg:-ml-2 2xl:items-start">
                     <h4 className="text-[40px] font-inter text-customGreen font-bold mt-4 2xl:max-w-[70%] ">
                         {language === 'en' ? heroData.title.en : heroData.title.tr}
