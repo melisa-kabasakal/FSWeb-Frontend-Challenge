@@ -93,7 +93,7 @@
         "vercel"
       ],
       "repo": "https://github.com/melisa-kabasakal/fsweb-s8-challenge-pizza.git",
-      "liveSite": "https://fsweb-s8-challenge-pizza-jgyo.vercel.app/orderpizza",
+      "liveSite": "https://fsweb-s8-challenge-pizza-jgyo.vercel.app",
       "images": [
         "/images/project1-1.png",
         "/images/project1-2.png",
