@@ -23,7 +23,7 @@ function Projects() {
     return (
         <div className="bg-customGreen flex justify-center">
             <div className='p-8 border-solid border-0 '>
-                <h2 className="font-inter text-[30px]  text-customBlue font-bold sm:text-center sm:mb-4 md:text-start">{language === 'en' ? "Projects" : "Projeler"}</h2>
+                <h2 className="font-inter text-[30px]  text-customBlue font-bold sm:text-center sm:mb-4 md:text-start lg:text-start lg:my-8">{language === 'en' ? "Projects" : "Projeler"}</h2>
                 {projects.map((project, index) => (
                     <ProjectCard key={index} project={project} language={language} />
                 ))}

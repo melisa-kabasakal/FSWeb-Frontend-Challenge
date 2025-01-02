@@ -27,10 +27,10 @@ function ProjectCard({ project, language }) {
     const getText = (lang) => (lang ? (language === 'en' ? lang.en : lang.tr) : '')
 
     return (
-        <Card className='mb-8 sm:text-[12px] md:text-[14px]'>
-            <CardBody className="flex flex-row sm:w-[640px] sm:max-h-[350px] ">
+        <Card className='mb-8 sm:text-[12px] md:text-[14px]   lg:flex lg:justify-center lg:items-start'>
+            <CardBody className="flex flex-row sm:w-[640px] sm:max-h-[350px] lg:w-[890px] ">
 
-                <div className='w-[40%] flex justify-start items-start  -ml-4 -mt-4  sm:w-[250px] md:w-80 '>
+                <div className='w-[40%] flex justify-start items-start  -ml-4 -mt-4 lg:w-[40%] lg:-ml-4 sm:w-[250px] md:w-80'>
                     <Carousel activeIndex={activeIndex} next={next} previous={previous}>
                         <CarouselIndicators
                             items={project.images.map((image, index) => ({ src: image, id: index }))}
@@ -45,13 +45,13 @@ function ProjectCard({ project, language }) {
                     </Carousel>
                 </div>
 
-                <div className='w-[60%] m-4'>
+                <div className='w-[60%] m-4 lg:w-[60%]'>
                     <CardTitle style={{
                         color: '#4338CA', fontFamily: 'Inter', fontSize: '23px', fontWeight: '700',
                         lineHeight: '32px'
                     }} tag="h5">{getText(project.name)}</CardTitle>
                     <CardSubtitle className=" font-inter  text-[#383838]">{getText(project.description)}</CardSubtitle>
-                    <div className="flex gap-2">
+                    <div className="flex gap-2 lg:mt-4">
                         {project.technologies.map((tech, index) => (
                             <CardText
                                 key={index}
@@ -62,7 +62,7 @@ function ProjectCard({ project, language }) {
 
                         ))}
                     </div>
-                    <div className="mb-4">
+                    <div className="mb-4 lg:mt-4">
                         <CardLink href={project.liveSite} style={{ color: 'black' }} >View Site</CardLink>
                         <CardLink href={project.repo} style={{ color: 'black' }} >GitHub</CardLink>
                     </div>

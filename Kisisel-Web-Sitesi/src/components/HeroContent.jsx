@@ -24,13 +24,13 @@ function HeroContent() {
     }
 
     return (
-        <div className="flex justify-center items-center w-full px-4 sm:ml-10 sm:flex-1 sm:-mt-10 md:flex-row md:justify-between md:items-center md:-mt-20">
-            <div className="flex flex-col sm:flex-col md:flex-row md:gap-4 items-center justify-between w-full md:max-w-[85%] ">
-                <div className="flex flex-col items-start md:max-w-[70%] md:flex- sm:max-w-[56%] sm:order-1">
-                    <h4 className="text-[40px] font-inter text-customGreen font-bold mt-4 ">
+        <div className="flex justify-center items-center w-full px-4 sm:ml-10 sm:flex-1 sm:-mt-10 md:flex-row md:justify-between md:items-center md:-mt-20 lg:w-[960px] xl:w-[70rem] xl:justify-center 2xl:w-[80rem] 2xl:ml-[90px] ">
+            <div className="flex flex-col sm:flex-col md:flex-row md:gap-4 items-center justify-between w-full md:max-w-[85%] xl:items-start 2xl:w-[960px]">
+                <div className="flex flex-col items-start md:max-w-[70%] md:flex- sm:max-w-[56%] sm:order-1 lg:-ml-2 2xl:items-start">
+                    <h4 className="text-[40px] font-inter text-customGreen font-bold mt-4 2xl:max-w-[70%] ">
                         {language === 'en' ? heroData.title.en : heroData.title.tr}
                     </h4>
-                    <p className="text-[15px] font-inter text-customWhite mt-4 sm:w-[300px] md:w-[400px]">
+                    <p className="text-[15px] font-inter text-customWhite mt-4 sm:w-[300px] md:w-[400px] ">
                         {language === 'en' ? heroData.about.en : heroData.about.tr}
                     </p>
                     <div className="flex gap-4 mt-6 sm:ml-16 md:ml-0 ">
@@ -57,7 +57,7 @@ function HeroContent() {
                 <div className="mt-8 md:mt-0 sm:mt-4 sm:order-2 md:order-2">
                     <img
                         src={heroData.img}
-                        className="w-[270px] h-[300px] border-0 rounded-xl sm:w-[170px] sm:h-[200px] md:w-[260px] md:h-[300px] lg:w-[300px] lg:h-[350px] md:ml-8 md:mt-4"
+                        className="w-[270px] h-[300px] border-0 rounded-xl sm:w-[170px] sm:h-[200px] md:w-[260px] md:h-[300px] lg:w-[300px] lg:h-[350px] md:ml-8 md:mt-4 2xl:max-w-[100%] 2xl:-mr-12"
                         alt="Profile"
                     />
                 </div>
