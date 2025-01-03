@@ -21,8 +21,8 @@ function Profile() {
     }
 
     return (
-        <div className="flex justify-center items-center  bg-customBlue py-8 ">
-            <div className=" sm:p-8 bg-customBlue border-solid border-0 sm:ml-0 sm:flex sm:flex-col sm:justify-center sm:items-center md:ml-6 md:items-start  lg:flex-nowrap lg:ml-0 ">
+        <div className="flex justify-center items-center  bg-customBlue py-12 px-8">
+            <div className=" sm:p-8 bg-customBlue  flex justify-center max-w-[960px] sm:flex-col sm:items-center md:justify-between md:items-start lg:w-[960px] xl:w-[70rem] xl:justify-around 2xl:w-[80rem]">
                 <h2 className="text-customGreen font-inter font-bold text-[30px]  mb-10 ">{language === 'en' ? "Profile" : "Profil"}</h2>
                 <div className="flex flex-col gap-6 md:flex-row md:flex-wrap  lg:flex-nowrap md:items-center lg:flex-row ">
                     <div className="w-[350px] ">

@@ -6,9 +6,9 @@ function Header() {
   const { language, toggleLanguage } = useLanguage();
 
   return (
-    <div className="flex items-center justify-between w-full mt-12 xl:w-[890px] xl:mx-auto sm:flex sm:flex-col-reverse  md:ml-0 md:flex-row md:max-w-[85%] 2xl:xl:mx-auto 2xl:items-center ">
+    <div className="flex items-center justify-between w-full mt-12 xl:w-[890px] xl:mx-auto sm:flex sm:flex-col-reverse  md:ml-0 md:flex-row md:max-w-[80%] 2xl:items-center ">
 
-      <h4 className="font-inter text-[32px] font-bold text-customGreen  sm:text-wrap sm:mb-6 md:ml-0 2xl:ml-3">
+      <h4 className="font-inter text-[32px] font-bold text-customGreen  sm:text-wrap sm:mb-6 md:ml-0 ">
         melisa
       </h4>
 

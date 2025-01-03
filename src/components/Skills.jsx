@@ -18,14 +18,16 @@ function Skills() {
     }, []);
 
     return (
-        <div className="flex justify-center items-center my-12 ">
-            <div className="flex flex-row border-solid border-0 w-[960px] p-12 md:flex-nowrap md:items-start  sm:flex sm:flex-wrap sm:gap-8 sm:items-center sm:justify-center sm:ml-10  md:gap-0 lg:ml-0">
-                <h2 className="font-inter font-bold mr-32 text-[#4832D3] text-[32px] text-left  md:-ml-8  sm:ml-12">{language === 'en' ? 'Skills' : 'Beceriler'}</h2>
-                <div className="grid grid-cols-2 md:grid-cols-2  gap-8 font-inter text-[20px] text-[#777777] max-sm:gap-6 max-sm:-ml-16 max-sm:flex-col">
+        <div className="flex justify-center items-center py-12 ">
+            <div className='flex justify-center max-w-[960px] sm:flex-col sm:items-center md:flex-row md:justify-between md:items-start lg:w-[960px] xl:w-[70rem] xl:justify-around 2xl:w-[80rem] '>
+                <div className=' md:ml-8 md:mt-4 sm:mb-4 2xl:-ml-8'>
+                    <h2 className="font-inter font-bold text-[#4832D3] text-[32px]">{language === 'en' ? 'Skills' : 'Yetenekler'}</h2>
+                </div>
+                <div className="grid grid-cols-2 md:grid-cols-2  font-inter text-[20px] text-[#777777] sm:gap-8 md:mr-16 sm:justify-center">
                     {skills.map((skill, index) => (
-                        <div key={index} className="flex flex-row items-center gap-3 mr-28 max-sm:flex max-sm:justify-around">
+                        <div key={index} className="flex flex-row items-center h-[100px] w-[100px] gap-3 sm:mx-16 md:mx-24">
                             <img src={skill.logo} alt={skill.name} className="w-16 h-16 " />
-                            <p className="font-inter text-center ">{skill.name}</p>
+                            <p className="font-inter text-center flex-shrink-0">{skill.name}</p>
                         </div>
                     ))}
                 </div>
