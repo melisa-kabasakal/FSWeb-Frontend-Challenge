@@ -29,8 +29,8 @@ export function DarkModeProvider({ children }) {
 
         return () => {
             mediaQuery.removeEventListener('change', handleChange)
-        };
-    }, []);
+        }
+    }, [])
 
     return (
         <DarkModeContext.Provider value={{ darkMode, toggleDarkMode }}>
@@ -38,5 +38,5 @@ export function DarkModeProvider({ children }) {
                 {children}
             </div>
         </DarkModeContext.Provider>
-    );
+    )
 }
