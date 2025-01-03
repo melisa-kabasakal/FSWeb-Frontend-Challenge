@@ -12,8 +12,8 @@ function Header() {
         melisa
       </h4>
 
-      <div className="flex items-center gap-8 sm:mb-4 sm:gap-56  md:gap-6 lg:gap-6 xl:gap-4 2xl:gap-2 2xl:-mr-2">
-        <h4 className="font-inter text-[15px] tracking-[0.1em] text-customGreen whitespace-nowrap -mt-10  xl:mr-4 z-10 relative ">
+      <div className="flex items-center gap-8 sm:mb-4 sm:gap-56  md:gap-6 lg:gap-6 xl:gap-4 2xl:gap-2 2xl:-mr-2 relative">
+        <h4 className="font-inter text-[15px] tracking-[0.1em] text-customGreen  -mt-10  xl:mr-4 z-10 relative ">
           {language === 'en' ? (
             <span
               onClick={toggleLanguage}
