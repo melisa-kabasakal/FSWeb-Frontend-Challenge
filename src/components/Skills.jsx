@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
-import { useLanguage } from '../contexts/LanguageContext';
+import React, { useState, useEffect } from 'react'
+import axios from 'axios'
+import { useLanguage } from '../contexts/LanguageContext'
+
 
 function Skills() {
     const [skills, setSkills] = useState([])
